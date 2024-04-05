@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercício Mapas v2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEstados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButtonRS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rio Grande do Sul"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Santa Catarina"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paraná"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/layoutPhotoView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <CheckBox
+            android:id="@+id/checkBoxPopulacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="População"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/checkBoxArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Àrea"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/checkBoxIDH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IDH"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNumeroDeMunicipios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de Municípios"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/espacamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewInformacao"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/espacamento3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bSair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPhotoView"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/espacamento2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
